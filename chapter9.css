@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 header {
@@ -10,7 +11,8 @@ header {
 }
 
 main {
-  width: 960px;
+  width: 100%;
+  max-width: 768px;
   margin: 50px auto;
   display: flex;
 }
@@ -49,20 +51,20 @@ main {
 }
 
 .step-num {
-  background-color: #ff9a4b;
-  color: white;
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
 }
 
 .title {
-  margin: 15px 0px 5px;
+  margin: 15px 0 5px;
 }
 
 footer {
   height: 50px;
-  background-color: #aaaaaa;
+  background-color: #aaa;
 }
 
 @media screen and (max-width: 768px) {
@@ -72,22 +74,22 @@ footer {
 
   main {
     width: 100%;
+    margin: 50px auto;
     display: block;
   }
 
-  .step-box {
-    width: 90%;
-    margin: 20px;
-    background-position: bottom;
-    background-size: cover;
+   .step-box {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+     width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-   .step-box:last-child {
-    margin-bottom: 50px;
+  .step-box:last-child {
+    margin-bottom: 0px;
   }
 
-  .step-box:first-child {
-    margin-top: 50px;
+  footer {
+    width : 100%;
   }
-
-}
