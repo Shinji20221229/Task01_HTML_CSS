@@ -27,9 +27,3 @@ main {
   margin-right: 0;
 }
 
-.step-img1 {
-  height: 150px;
-  background-image: url(img/flow01.png);
-  background-position: bottom;
-  background-size: cover;
-}
